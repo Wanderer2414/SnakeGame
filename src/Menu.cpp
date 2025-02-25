@@ -31,12 +31,11 @@ void Menu::init() {
     quit_button.normal_color = main_button_normal_color;
     quit_button.hover_color = main_button_hover_color;
 
-    main_box.motion.setDuration(250);
+    main_box.setDuration(250);
     main_box.setCenterPosition(SCREEN_WIDTH/2, SCREEN_HEIGHT/2);
     main_box.setRadius(0.2);
-    main_box.setWidth(400);
-    main_box.motion.setDelay(200);
-    main_box.motion.setRange(0, 300);
+    main_box.setDelay(200);
+    main_box.setRange({Menu_width, 0}, {Menu_width, Menu_max_height});
     main_box.color = main_box_color;
     main_box.ChildrenVisible = true;
 
@@ -54,7 +53,7 @@ void Menu::draw() {
     main_box.draw();
 }
 int Menu::run() {
-    main_box.motion.start();
+    main_box.start();
     int index = 0;
     while (!WindowShouldClose()) {
         main_box.handle();
@@ -75,14 +74,14 @@ int Menu::run() {
         }
         if (isChosen) {
             main_box.children.clear();
-            main_box.motion.setRange(main_box.motion.getEndPoint(), 0);
-            main_box.motion.setDelay(0);
-            main_box.motion.setDuration(200);
-            main_box.motion.start();
+            main_box.setRange({Menu_width, Menu_max_height}, {Menu_width, 0});
+            main_box.setDelay(0);
+            main_box.setDuration(200);
+            main_box.start();
             main_box.ChildrenVisible = false;
             isChosen = false;
         }
-        if (!main_box.motion.isRunning() && isReturned) return index;
+        if (!main_box.isRunning() && isReturned) return index;
     }
     return 0;
 }

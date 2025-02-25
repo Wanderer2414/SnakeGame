@@ -1,6 +1,7 @@
 /home/nguyenlequochuy/projects/cpp_raylib/SnakeGame/build/CMakeFiles/SnakeGame.dir
 /home/nguyenlequochuy/projects/cpp_raylib/SnakeGame/build/CMakeFiles/edit_cache.dir
 /home/nguyenlequochuy/projects/cpp_raylib/SnakeGame/build/CMakeFiles/rebuild_cache.dir
+/home/nguyenlequochuy/projects/cpp_raylib/SnakeGame/build/src/CMakeFiles/General.dir
 /home/nguyenlequochuy/projects/cpp_raylib/SnakeGame/build/src/CMakeFiles/Clock.dir
 /home/nguyenlequochuy/projects/cpp_raylib/SnakeGame/build/src/CMakeFiles/LinearMotion.dir
 /home/nguyenlequochuy/projects/cpp_raylib/SnakeGame/build/src/CMakeFiles/NoticeRound.dir

@@ -1,6 +1,7 @@
 #pragma once
 
 #include "Controller.h"
+#include "General.h"
 #include <raylib.h>
 #include <string>
 

@@ -46,6 +46,6 @@ private:
     Texture2D       BACKGROUND_IMAGE;
     RoundedButton   HomeButton;
     BoardGame       board;
-    OpenVerticalRRectangleBox playground;
+    ExpandRRectangleBox playground;
     LinearMotion    Home_Motion;
 };

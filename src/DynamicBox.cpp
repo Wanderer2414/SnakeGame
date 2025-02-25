@@ -1,10 +1,9 @@
 #include "../include/DynamicBox.h"
 #include <cmath>
 #include <ctime>
-#include <raylib.h>
 
 ExpandRRectangleBox::ExpandRRectangleBox(const int& index):Controller(index) {
-
+    LinearMotion::setRange(0,1);
 }
 Rectangle ExpandRRectangleBox::getBound() const  {
     return m_rec;
@@ -20,29 +19,28 @@ void ExpandRRectangleBox::setPointCount(const unsigned int& point_count) {
 }
 void ExpandRRectangleBox::setCenterPosition(const float& x, const float& y) {
     m_center_pos = {x , y};
-    m_rec.x = m_center_pos.x - m_rec.width/2;
-    m_rec.y = m_center_pos.y - m_rec.height/2;
 }
 
 void ExpandRRectangleBox::setPosition(const float& x, const float& y) {
     m_rec.x = x;
     m_rec.y = y;
-    m_center_pos.x = m_rec.x + m_rec.width/2;
-    m_center_pos.y = m_rec.y + getEndPoint()/2;
+    m_center_pos = Ex::getPostion(m_rec) + Ex::getSize(m_rec)/2;
 }
 void ExpandRRectangleBox::setRadius(const float& radius) {
     m_radius = radius;
 }
 void ExpandRRectangleBox::setRange(const Vector2& start, const Vector2& end) {
-
+    m_start = start;
+    m_end = end;
+    m_delta = end -start;
 }
 void ExpandRRectangleBox::handle() {
+    Ex::setSize(m_rec, get()*m_delta + m_start);
+    Ex::setPosition(m_rec, m_center_pos - Ex::getSize(m_rec)/2);
     for (auto& i:children) i->handle();
 }
 
 void ExpandRRectangleBox::draw() {
-    m_rec.height = get();
-    m_rec.y = m_center_pos.y - m_rec.height/2;
     DrawRectangleRounded(m_rec, m_radius, m_point_count, color);
     if (ChildrenVisible && getEndPoint() == get())
         for (auto& i:children) i->draw();

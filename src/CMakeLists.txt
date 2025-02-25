@@ -1,4 +1,5 @@
-
+add_library(General General.cpp)
+target_include_directories(General PUBLIC ${CMAKE_SOURCE_DIR}/include)
 
 add_library(Clock Clock.cpp)
 target_include_directories(Clock PUBLIC ${CMAKE_SOURCE_DIR}/include)
@@ -15,7 +16,7 @@ add_library(Controller Controller.cpp)
 target_include_directories(Controller PUBLIC ${CMAKE_SOURCE_DIR}/include)
 
 add_library(BoardGame BoardGame.cpp)
-target_link_libraries(BoardGame Controller Clock)
+target_link_libraries(BoardGame Controller Clock General)
 target_include_directories(BoardGame PUBLIC ${CMAKE_SOURCE_DIR}/include)
 
 add_library(Button Button.cpp)
@@ -31,7 +32,7 @@ target_link_libraries(ImageButton Button)
 target_include_directories(ImageButton PUBLIC ${CMAKE_SOURCE_DIR}/include)
 
 add_library(DynamicBox DynamicBox.cpp)
-target_link_libraries(DynamicBox Controller LinearMotion)
+target_link_libraries(DynamicBox Controller LinearMotion General)
 target_include_directories(DynamicBox PUBLIC ${CMAKE_SOURCE_DIR}/include)
 
 

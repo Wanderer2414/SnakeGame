@@ -91,7 +91,7 @@ void BoardGame::handle() {
     snake[0].first.y += dir.y*speed;
     for (int i = apples.size()-1; i>=0; i--) {
         Vector2 dis = {snake.front().first.x-apples[i].x, snake.front().first.y-apples[i].y};
-        if (distance(dis)<apple_size/2) {
+        if (distance(dis)<apple_size*2/3) {
             apples.erase(apples.begin()+i); 
             score++;
             snake.push_back({{snake.back().first.x, snake.back().first.y}, snake_color});

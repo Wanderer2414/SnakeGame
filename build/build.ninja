@@ -42,7 +42,7 @@ cmake_ninja_workdir = /home/nguyenlequochuy/projects/cpp_raylib/SnakeGame/build/
 #############################################
 # Order-only phony target for SnakeGame
 
-build cmake_object_order_depends_target_SnakeGame: phony || cmake_object_order_depends_target_Application cmake_object_order_depends_target_BoardGame cmake_object_order_depends_target_Button cmake_object_order_depends_target_Clock cmake_object_order_depends_target_Controller cmake_object_order_depends_target_DynamicBox cmake_object_order_depends_target_Form cmake_object_order_depends_target_GameForm cmake_object_order_depends_target_ImageButton cmake_object_order_depends_target_LinearMotion cmake_object_order_depends_target_Menu cmake_object_order_depends_target_NoticeRound cmake_object_order_depends_target_RoundedButton
+build cmake_object_order_depends_target_SnakeGame: phony || cmake_object_order_depends_target_Application cmake_object_order_depends_target_BoardGame cmake_object_order_depends_target_Button cmake_object_order_depends_target_Clock cmake_object_order_depends_target_Controller cmake_object_order_depends_target_DynamicBox cmake_object_order_depends_target_Form cmake_object_order_depends_target_GameForm cmake_object_order_depends_target_General cmake_object_order_depends_target_ImageButton cmake_object_order_depends_target_LinearMotion cmake_object_order_depends_target_Menu cmake_object_order_depends_target_NoticeRound cmake_object_order_depends_target_RoundedButton
 
 build CMakeFiles/SnakeGame.dir/src/main.cpp.o: CXX_COMPILER__SnakeGame_unscanned_ /home/nguyenlequochuy/projects/cpp_raylib/SnakeGame/src/main.cpp || cmake_object_order_depends_target_SnakeGame
   DEP_FILE = CMakeFiles/SnakeGame.dir/src/main.cpp.o.d
@@ -59,10 +59,10 @@ build CMakeFiles/SnakeGame.dir/src/main.cpp.o: CXX_COMPILER__SnakeGame_unscanned
 #############################################
 # Link the executable /home/nguyenlequochuy/projects/cpp_raylib/SnakeGame/SnakeGame
 
-build /home/nguyenlequochuy/projects/cpp_raylib/SnakeGame/SnakeGame: CXX_EXECUTABLE_LINKER__SnakeGame_ CMakeFiles/SnakeGame.dir/src/main.cpp.o | src/libApplication.a /usr/lib/libraylib.so src/libMenu.a src/libRoundedButton.a src/libDynamicBox.a src/libGameForm.a src/libForm.a src/libImageButton.a src/libButton.a src/libBoardGame.a src/libController.a src/libNoticeRound.a src/libLinearMotion.a src/libClock.a || src/libApplication.a src/libBoardGame.a src/libButton.a src/libClock.a src/libController.a src/libDynamicBox.a src/libForm.a src/libGameForm.a src/libImageButton.a src/libLinearMotion.a src/libMenu.a src/libNoticeRound.a src/libRoundedButton.a
+build /home/nguyenlequochuy/projects/cpp_raylib/SnakeGame/SnakeGame: CXX_EXECUTABLE_LINKER__SnakeGame_ CMakeFiles/SnakeGame.dir/src/main.cpp.o | src/libApplication.a /usr/lib/libraylib.so src/libMenu.a src/libRoundedButton.a src/libDynamicBox.a src/libGameForm.a src/libForm.a src/libImageButton.a src/libButton.a src/libBoardGame.a src/libController.a src/libGeneral.a src/libNoticeRound.a src/libLinearMotion.a src/libClock.a || src/libApplication.a src/libBoardGame.a src/libButton.a src/libClock.a src/libController.a src/libDynamicBox.a src/libForm.a src/libGameForm.a src/libGeneral.a src/libImageButton.a src/libLinearMotion.a src/libMenu.a src/libNoticeRound.a src/libRoundedButton.a
   DEP_FILE = CMakeFiles/SnakeGame.dir/link.d
   LINK_FLAGS = -Wl,--dependency-file=CMakeFiles/SnakeGame.dir/link.d
-  LINK_LIBRARIES = src/libApplication.a  /usr/lib/libraylib.so  src/libMenu.a  src/libRoundedButton.a  src/libDynamicBox.a  src/libGameForm.a  src/libForm.a  src/libImageButton.a  src/libButton.a  src/libBoardGame.a  src/libController.a  src/libNoticeRound.a  src/libLinearMotion.a  src/libClock.a  -L/usr/lib -lraylib
+  LINK_LIBRARIES = src/libApplication.a  /usr/lib/libraylib.so  src/libMenu.a  src/libRoundedButton.a  src/libDynamicBox.a  src/libGameForm.a  src/libForm.a  src/libImageButton.a  src/libButton.a  src/libBoardGame.a  src/libController.a  src/libGeneral.a  src/libNoticeRound.a  src/libLinearMotion.a  src/libClock.a  -L/usr/lib -lraylib
   OBJECT_DIR = CMakeFiles/SnakeGame.dir
   POST_BUILD = cd /home/nguyenlequochuy/projects/cpp_raylib/SnakeGame/build && /usr/bin/cmake -E copy_if_different /home/nguyenlequochuy/projects/cpp_raylib/SnakeGame/assets/apple.jpg /home/nguyenlequochuy/projects/cpp_raylib/SnakeGame/assets/apple.png /home/nguyenlequochuy/projects/cpp_raylib/SnakeGame/assets/background_common.jpg /home/nguyenlequochuy/projects/cpp_raylib/SnakeGame/build/assets
   PRE_LINK = :
@@ -97,6 +97,36 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # Write statements declared in CMakeLists.txt:
 # /home/nguyenlequochuy/projects/cpp_raylib/SnakeGame/CMakeLists.txt
 # =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target General
+
+
+#############################################
+# Order-only phony target for General
+
+build cmake_object_order_depends_target_General: phony || .
+
+build src/CMakeFiles/General.dir/General.cpp.o: CXX_COMPILER__General_unscanned_ /home/nguyenlequochuy/projects/cpp_raylib/SnakeGame/src/General.cpp || cmake_object_order_depends_target_General
+  DEP_FILE = src/CMakeFiles/General.dir/General.cpp.o.d
+  INCLUDES = -I/home/nguyenlequochuy/projects/cpp_raylib/SnakeGame/include
+  OBJECT_DIR = src/CMakeFiles/General.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/General.dir
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target General
+
+
+#############################################
+# Link the static library src/libGeneral.a
+
+build src/libGeneral.a: CXX_STATIC_LIBRARY_LINKER__General_ src/CMakeFiles/General.dir/General.cpp.o
+  OBJECT_DIR = src/CMakeFiles/General.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = src/libGeneral.a
+  TARGET_PDB = General.a.dbg
 
 # =============================================================================
 # Object build statements for STATIC_LIBRARY target Clock
@@ -225,7 +255,7 @@ build src/libController.a: CXX_STATIC_LIBRARY_LINKER__Controller_ src/CMakeFiles
 #############################################
 # Order-only phony target for BoardGame
 
-build cmake_object_order_depends_target_BoardGame: phony || cmake_object_order_depends_target_Clock cmake_object_order_depends_target_Controller
+build cmake_object_order_depends_target_BoardGame: phony || cmake_object_order_depends_target_Clock cmake_object_order_depends_target_Controller cmake_object_order_depends_target_General
 
 build src/CMakeFiles/BoardGame.dir/BoardGame.cpp.o: CXX_COMPILER__BoardGame_unscanned_ /home/nguyenlequochuy/projects/cpp_raylib/SnakeGame/src/BoardGame.cpp || cmake_object_order_depends_target_BoardGame
   DEP_FILE = src/CMakeFiles/BoardGame.dir/BoardGame.cpp.o.d
@@ -241,7 +271,7 @@ build src/CMakeFiles/BoardGame.dir/BoardGame.cpp.o: CXX_COMPILER__BoardGame_unsc
 #############################################
 # Link the static library src/libBoardGame.a
 
-build src/libBoardGame.a: CXX_STATIC_LIBRARY_LINKER__BoardGame_ src/CMakeFiles/BoardGame.dir/BoardGame.cpp.o || src/libClock.a src/libController.a
+build src/libBoardGame.a: CXX_STATIC_LIBRARY_LINKER__BoardGame_ src/CMakeFiles/BoardGame.dir/BoardGame.cpp.o || src/libClock.a src/libController.a src/libGeneral.a
   OBJECT_DIR = src/CMakeFiles/BoardGame.dir
   POST_BUILD = :
   PRE_LINK = :
@@ -345,7 +375,7 @@ build src/libImageButton.a: CXX_STATIC_LIBRARY_LINKER__ImageButton_ src/CMakeFil
 #############################################
 # Order-only phony target for DynamicBox
 
-build cmake_object_order_depends_target_DynamicBox: phony || cmake_object_order_depends_target_Clock cmake_object_order_depends_target_Controller cmake_object_order_depends_target_LinearMotion
+build cmake_object_order_depends_target_DynamicBox: phony || cmake_object_order_depends_target_Clock cmake_object_order_depends_target_Controller cmake_object_order_depends_target_General cmake_object_order_depends_target_LinearMotion
 
 build src/CMakeFiles/DynamicBox.dir/DynamicBox.cpp.o: CXX_COMPILER__DynamicBox_unscanned_ /home/nguyenlequochuy/projects/cpp_raylib/SnakeGame/src/DynamicBox.cpp || cmake_object_order_depends_target_DynamicBox
   DEP_FILE = src/CMakeFiles/DynamicBox.dir/DynamicBox.cpp.o.d
@@ -361,7 +391,7 @@ build src/CMakeFiles/DynamicBox.dir/DynamicBox.cpp.o: CXX_COMPILER__DynamicBox_u
 #############################################
 # Link the static library src/libDynamicBox.a
 
-build src/libDynamicBox.a: CXX_STATIC_LIBRARY_LINKER__DynamicBox_ src/CMakeFiles/DynamicBox.dir/DynamicBox.cpp.o || src/libClock.a src/libController.a src/libLinearMotion.a
+build src/libDynamicBox.a: CXX_STATIC_LIBRARY_LINKER__DynamicBox_ src/CMakeFiles/DynamicBox.dir/DynamicBox.cpp.o || src/libClock.a src/libController.a src/libGeneral.a src/libLinearMotion.a
   OBJECT_DIR = src/CMakeFiles/DynamicBox.dir
   POST_BUILD = :
   PRE_LINK = :
@@ -405,7 +435,7 @@ build src/libForm.a: CXX_STATIC_LIBRARY_LINKER__Form_ src/CMakeFiles/Form.dir/Fo
 #############################################
 # Order-only phony target for Menu
 
-build cmake_object_order_depends_target_Menu: phony || cmake_object_order_depends_target_Button cmake_object_order_depends_target_Clock cmake_object_order_depends_target_Controller cmake_object_order_depends_target_DynamicBox cmake_object_order_depends_target_Form cmake_object_order_depends_target_LinearMotion cmake_object_order_depends_target_RoundedButton
+build cmake_object_order_depends_target_Menu: phony || cmake_object_order_depends_target_Button cmake_object_order_depends_target_Clock cmake_object_order_depends_target_Controller cmake_object_order_depends_target_DynamicBox cmake_object_order_depends_target_Form cmake_object_order_depends_target_General cmake_object_order_depends_target_LinearMotion cmake_object_order_depends_target_RoundedButton
 
 build src/CMakeFiles/Menu.dir/Menu.cpp.o: CXX_COMPILER__Menu_unscanned_ /home/nguyenlequochuy/projects/cpp_raylib/SnakeGame/src/Menu.cpp || cmake_object_order_depends_target_Menu
   DEP_FILE = src/CMakeFiles/Menu.dir/Menu.cpp.o.d
@@ -421,7 +451,7 @@ build src/CMakeFiles/Menu.dir/Menu.cpp.o: CXX_COMPILER__Menu_unscanned_ /home/ng
 #############################################
 # Link the static library src/libMenu.a
 
-build src/libMenu.a: CXX_STATIC_LIBRARY_LINKER__Menu_ src/CMakeFiles/Menu.dir/Menu.cpp.o || src/libButton.a src/libClock.a src/libController.a src/libDynamicBox.a src/libForm.a src/libLinearMotion.a src/libRoundedButton.a
+build src/libMenu.a: CXX_STATIC_LIBRARY_LINKER__Menu_ src/CMakeFiles/Menu.dir/Menu.cpp.o || src/libButton.a src/libClock.a src/libController.a src/libDynamicBox.a src/libForm.a src/libGeneral.a src/libLinearMotion.a src/libRoundedButton.a
   OBJECT_DIR = src/CMakeFiles/Menu.dir
   POST_BUILD = :
   PRE_LINK = :
@@ -435,7 +465,7 @@ build src/libMenu.a: CXX_STATIC_LIBRARY_LINKER__Menu_ src/CMakeFiles/Menu.dir/Me
 #############################################
 # Order-only phony target for GameForm
 
-build cmake_object_order_depends_target_GameForm: phony || cmake_object_order_depends_target_BoardGame cmake_object_order_depends_target_Button cmake_object_order_depends_target_Clock cmake_object_order_depends_target_Controller cmake_object_order_depends_target_Form cmake_object_order_depends_target_ImageButton cmake_object_order_depends_target_LinearMotion cmake_object_order_depends_target_NoticeRound
+build cmake_object_order_depends_target_GameForm: phony || cmake_object_order_depends_target_BoardGame cmake_object_order_depends_target_Button cmake_object_order_depends_target_Clock cmake_object_order_depends_target_Controller cmake_object_order_depends_target_Form cmake_object_order_depends_target_General cmake_object_order_depends_target_ImageButton cmake_object_order_depends_target_LinearMotion cmake_object_order_depends_target_NoticeRound
 
 build src/CMakeFiles/GameForm.dir/GameForm.cpp.o: CXX_COMPILER__GameForm_unscanned_ /home/nguyenlequochuy/projects/cpp_raylib/SnakeGame/src/GameForm.cpp || cmake_object_order_depends_target_GameForm
   DEP_FILE = src/CMakeFiles/GameForm.dir/GameForm.cpp.o.d
@@ -451,7 +481,7 @@ build src/CMakeFiles/GameForm.dir/GameForm.cpp.o: CXX_COMPILER__GameForm_unscann
 #############################################
 # Link the static library src/libGameForm.a
 
-build src/libGameForm.a: CXX_STATIC_LIBRARY_LINKER__GameForm_ src/CMakeFiles/GameForm.dir/GameForm.cpp.o || src/libBoardGame.a src/libButton.a src/libClock.a src/libController.a src/libForm.a src/libImageButton.a src/libLinearMotion.a src/libNoticeRound.a
+build src/libGameForm.a: CXX_STATIC_LIBRARY_LINKER__GameForm_ src/CMakeFiles/GameForm.dir/GameForm.cpp.o || src/libBoardGame.a src/libButton.a src/libClock.a src/libController.a src/libForm.a src/libGeneral.a src/libImageButton.a src/libLinearMotion.a src/libNoticeRound.a
   OBJECT_DIR = src/CMakeFiles/GameForm.dir
   POST_BUILD = :
   PRE_LINK = :
@@ -465,7 +495,7 @@ build src/libGameForm.a: CXX_STATIC_LIBRARY_LINKER__GameForm_ src/CMakeFiles/Gam
 #############################################
 # Order-only phony target for Application
 
-build cmake_object_order_depends_target_Application: phony || cmake_object_order_depends_target_BoardGame cmake_object_order_depends_target_Button cmake_object_order_depends_target_Clock cmake_object_order_depends_target_Controller cmake_object_order_depends_target_DynamicBox cmake_object_order_depends_target_Form cmake_object_order_depends_target_GameForm cmake_object_order_depends_target_ImageButton cmake_object_order_depends_target_LinearMotion cmake_object_order_depends_target_Menu cmake_object_order_depends_target_NoticeRound cmake_object_order_depends_target_RoundedButton
+build cmake_object_order_depends_target_Application: phony || cmake_object_order_depends_target_BoardGame cmake_object_order_depends_target_Button cmake_object_order_depends_target_Clock cmake_object_order_depends_target_Controller cmake_object_order_depends_target_DynamicBox cmake_object_order_depends_target_Form cmake_object_order_depends_target_GameForm cmake_object_order_depends_target_General cmake_object_order_depends_target_ImageButton cmake_object_order_depends_target_LinearMotion cmake_object_order_depends_target_Menu cmake_object_order_depends_target_NoticeRound cmake_object_order_depends_target_RoundedButton
 
 build src/CMakeFiles/Application.dir/Application.cpp.o: CXX_COMPILER__Application_unscanned_ /home/nguyenlequochuy/projects/cpp_raylib/SnakeGame/src/Application.cpp || cmake_object_order_depends_target_Application
   DEP_FILE = src/CMakeFiles/Application.dir/Application.cpp.o.d
@@ -481,7 +511,7 @@ build src/CMakeFiles/Application.dir/Application.cpp.o: CXX_COMPILER__Applicatio
 #############################################
 # Link the static library src/libApplication.a
 
-build src/libApplication.a: CXX_STATIC_LIBRARY_LINKER__Application_ src/CMakeFiles/Application.dir/Application.cpp.o || src/libBoardGame.a src/libButton.a src/libClock.a src/libController.a src/libDynamicBox.a src/libForm.a src/libGameForm.a src/libImageButton.a src/libLinearMotion.a src/libMenu.a src/libNoticeRound.a src/libRoundedButton.a
+build src/libApplication.a: CXX_STATIC_LIBRARY_LINKER__Application_ src/CMakeFiles/Application.dir/Application.cpp.o || src/libBoardGame.a src/libButton.a src/libClock.a src/libController.a src/libDynamicBox.a src/libForm.a src/libGameForm.a src/libGeneral.a src/libImageButton.a src/libLinearMotion.a src/libMenu.a src/libNoticeRound.a src/libRoundedButton.a
   OBJECT_DIR = src/CMakeFiles/Application.dir
   POST_BUILD = :
   PRE_LINK = :
@@ -531,6 +561,8 @@ build Form: phony src/libForm.a
 
 build GameForm: phony src/libGameForm.a
 
+build General: phony src/libGeneral.a
+
 build ImageButton: phony src/libImageButton.a
 
 build LinearMotion: phony src/libLinearMotion.a
@@ -559,6 +591,8 @@ build libForm.a: phony src/libForm.a
 
 build libGameForm.a: phony src/libGameForm.a
 
+build libGeneral.a: phony src/libGeneral.a
+
 build libImageButton.a: phony src/libImageButton.a
 
 build libLinearMotion.a: phony src/libLinearMotion.a
@@ -584,7 +618,7 @@ build all: phony /home/nguyenlequochuy/projects/cpp_raylib/SnakeGame/SnakeGame s
 #############################################
 # Folder: /home/nguyenlequochuy/projects/cpp_raylib/SnakeGame/build/src
 
-build src/all: phony src/libClock.a src/libLinearMotion.a src/libNoticeRound.a src/libController.a src/libBoardGame.a src/libButton.a src/libRoundedButton.a src/libImageButton.a src/libDynamicBox.a src/libForm.a src/libMenu.a src/libGameForm.a src/libApplication.a
+build src/all: phony src/libGeneral.a src/libClock.a src/libLinearMotion.a src/libNoticeRound.a src/libController.a src/libBoardGame.a src/libButton.a src/libRoundedButton.a src/libImageButton.a src/libDynamicBox.a src/libForm.a src/libMenu.a src/libGameForm.a src/libApplication.a
 
 # =============================================================================
 # Built-in targets

@@ -4,7 +4,7 @@
 #include <vector>
 #include "Controller.h"
 #include "LinearMotion.h"
-
+#include "General.h"
 class ExpandRRectangleBox:public Controller, public LinearMotion {
 public:
     ExpandRRectangleBox(const int& index = -1);
@@ -23,7 +23,10 @@ public:
     std::vector<Controller*> children;
 private:
     unsigned int    m_point_count = 30;
-    Vector2         m_center_pos = {0, 0};
+    Vector2         m_center_pos = {0, 0},
+                    m_start     = {0, 0},
+                    m_end       = {0, 0},
+                    m_delta     = {0, 0};
     Rectangle       m_rec;
     float           m_radius = 0;
     long            start_clock = 0;

@@ -6,6 +6,9 @@
 #pragma once
 #define Main_button_width 300.0f
 #define Main_button_height 50.0f
+
+#define Menu_width 400
+#define Menu_max_height 300
 class Menu : public Form {
 public:
     Menu();
@@ -24,7 +27,7 @@ private:
     bool            isReturned = false,
                     isChosen = false;
     int             difficult = 0;
-    OpenVerticalRRectangleBox main_box;
+    ExpandRRectangleBox main_box;
     RoundedButton   start_button,
                     difficult_button,
                     quit_button;

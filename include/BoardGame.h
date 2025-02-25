@@ -15,7 +15,7 @@
 #define time_pos_y 20
 #define time_font_color BLACK
 #define time_font_size 30
-#define warning_time_remain 50
+#define warning_time_remain 10
 #define warning_color RED
 #define snake_color BLUE
 #define snake_eat_color RED
