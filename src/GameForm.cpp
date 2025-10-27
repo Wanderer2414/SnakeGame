@@ -1,5 +1,4 @@
 #include "../include/GameForm.h"
-#include <raylib.h>
 
 GameForm::GameForm() {
 

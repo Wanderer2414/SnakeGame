@@ -1,6 +1,5 @@
 #include "../include/Button.h"
 #include "../include/General.h"
-#include <raylib.h>
 
 Button::Button(const int& index):Controller(index) {
 }

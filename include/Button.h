@@ -2,7 +2,7 @@
 
 #include "Controller.h"
 #include "General.h"
-#include <raylib.h>
+#include "../raylib/src/raylib.h"
 #include <string>
 
 #define Default_Color BLUE

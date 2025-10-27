@@ -1,5 +1,4 @@
 #include "../include/NoticeRound.h"
-#include <raylib.h>
 #include <string>
 
 NoticeRound::NoticeRound(const int& index):Controller(index) {

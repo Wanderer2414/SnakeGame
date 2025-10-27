@@ -2,7 +2,7 @@
 #include "Form.h"
 #include "DynamicBox.h"
 #include "Configuration.h"
-#include <raylib.h>
+#include "../raylib/src/raylib.h"
 #pragma once
 #define Main_button_width 300.0f
 #define Main_button_height 50.0f

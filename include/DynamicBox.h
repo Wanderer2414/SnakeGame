@@ -1,6 +1,6 @@
 #pragma once
 
-#include <raylib.h>
+#include "../raylib/src/raylib.h"
 #include <vector>
 #include "Controller.h"
 #include "LinearMotion.h"

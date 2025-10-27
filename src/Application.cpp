@@ -1,5 +1,5 @@
 #include "../include/Application.h"
-#include <raylib.h>
+#include "../raylib/src/raylib.h"
 
 Application::Application() {
     InitWindow(SCREEN_WIDTH, SCREEN_HEIGHT, Program_title);

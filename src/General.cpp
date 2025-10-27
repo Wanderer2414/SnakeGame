@@ -1,6 +1,5 @@
 #include "../include/General.h"
 #include <cmath>
-#include <raylib.h>
 
 float Ex::Distance(const Vector2& a, const Vector2& b) {
     return std::sqrt(pow(a.x-b.x, 2) + pow(a.y - b.y,2));

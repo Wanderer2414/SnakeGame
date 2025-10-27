@@ -1,5 +1,4 @@
 #include "../include/RoundedButton.h"
-#include <raylib.h>
 
 RoundedButton::RoundedButton(const int& index):Button(index) {
 }

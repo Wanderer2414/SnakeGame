@@ -1,6 +1,6 @@
 #include "GameForm.h"
 #include "Menu.h"
-#include "raylib.h"
+#include "../raylib/src/raylib.h"
 #include <vector>
 #include "Form.h"
 #include "Configuration.h"

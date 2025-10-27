@@ -1,5 +1,5 @@
 #include "../include/Menu.h"
-#include <raylib.h>
+#include "../raylib/src/raylib.h"
 
 Menu::Menu(): 
     start_button(1) {

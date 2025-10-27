@@ -1,7 +1,7 @@
 #include "../include/BoardGame.h"
 #include <cmath>
 #include <ctime>
-#include <raylib.h>
+#include "../raylib/src/raylib.h"
 #include <string>
 
 BoardGame::BoardGame(const int& index):Controller(index) {

@@ -3,7 +3,7 @@
 #include "Controller.h"
 #include "LinearMotion.h"
 #include "Configuration.h"
-#include <raylib.h>
+#include "../raylib/src/raylib.h"
 
 #define n_width SCREEN_WIDTH
 #define n_height 200

@@ -8,7 +8,7 @@
 #include "Menu.h"
 #include "DynamicBox.h"
 #include "NoticeRound.h"
-#include <raylib.h>
+#include "../raylib/src/raylib.h"
 
 #define Playground_width 700
 #define Playground_height 500

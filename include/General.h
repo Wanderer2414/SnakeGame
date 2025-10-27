@@ -1,6 +1,6 @@
 #pragma once
 
-#include <raylib.h>
+#include "../raylib/src/raylib.h"
 Vector2 operator-(const Vector2& a, const Vector2& b); 
 Vector2 operator+(const Vector2& a, const Vector2& b);
 Vector2 operator*(const float& x, const Vector2& vector);

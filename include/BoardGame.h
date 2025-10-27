@@ -2,7 +2,7 @@
 #include "Clock.h"
 #include "Controller.h"
 #include "Configuration.h"
-#include <raylib.h>
+#include "../raylib/src/raylib.h"
 #include <utility>
 #include <vector>
 

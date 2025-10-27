@@ -1,5 +1,4 @@
 #include "../include/ImageButton.h"
-#include <raylib.h>
 
 ImageButton::ImageButton(const int& index):Button(index) {
 
